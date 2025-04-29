@@ -1,7 +1,7 @@
 # DSC4900 - Predicting Hospital Readmission using Machine Learning Models
 
 <h2>Description</h2>
-This project predicts hospital readmissions using demographic and clinical data from 130 hospitals between 1999–2008. I tested Logistic Regression, Random Forest, and Gradient Boosting, focusing on AUC scores.
+Hospital readmissions are a growing concern for healthcare systems due to their financial cost and impact on patient outcomes. This project uses machine learning models and analytical techniques and assesses their effectiveness in predicting readmission outcomes. This project predicts hospital readmissions using demographic and clinical data from 130 hospitals between 1999–2008. I tested 3 machine learning models: Logistic Regression, Random Forest, and Gradient Boosting, focusing on AUC scores.
 <br />
 
 
@@ -17,27 +17,23 @@ This project predicts hospital readmissions using demographic and clinical data 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
 Logistic Regression ROC:  <br/>
 <img src="https://i.imgur.com/NpyUnYp.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
-The logistic regression's ROC AUCcurve shows the performance of the logistic regression model in distinguishing between patients who were readmitted versus not readmitted. The performance is better than random guessing, as shown by the area under the curve (AUC), which is greater than 0.5.
+The logistic regression's ROC AUC curve shows the performance of the logistic regression model in distinguishing between patients who were readmitted versus not readmitted. The performance is better than random guessing, as shown by the area under the curve (AUC), which is greater than 0.5.
 <br />
 Random Forest ROC: <br/>
 <img src="https://i.imgur.com/ZOG0KEJ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 When compared to logistic regression, the random forest model's ROC AUC curve shows better class separation than the logistic regression model with an AUC of 0.69. Initially, some overfitting was detected, which was addressed through hyperparameter tuning, and the final model achieved consistent AUC scores across training and testing datasets.
 <br />
-Gradien Boosting ROC:  <br/>
+Gradient Boosting ROC:  <br/>
 <img src="https://i.imgur.com/5FpO8p0.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 Out of all the models tested, Gradient Boosting performed the best. With an average AUC of  0.70
 <br />
 Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LBcmk6H.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 This feature importance plot shows which patient characteristics had the greatest influence on the Gradient Boosting model’s ability to predict hospital readmissions. Variables such as number_inpatient, dicharge_disposition_id, number_diagnoses, were among the strongest predictors.
 <br />
@@ -47,13 +43,12 @@ discharge_disposition_id: a code representing the type of discharge (e.g., disch
 <br />
 number_diagnoses: the total number of different diagnoses recorded for a patient during their hospital stay. Patients with multiple diagnoses often have more complex health conditions, increasing their chance of readmission.
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+## Conclusion
+  
+Among the models tested, Gradient Boosting achieved the highest and most consistent performance, with an AUC of 0.70. Random Forest followed closely with an AUC of 0.69 and Logistic Regression is the lowest performing model with an AUC of 0.66. From my feature importance chart, I identified key factors influencing readmission risk, such as prior inpatient admissions, discharge disposition, and the number of diagnoses.  
+
 
 <!--
  ```diff
