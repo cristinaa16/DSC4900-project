@@ -28,7 +28,7 @@ Target Variable:
 <h2>Project walk-through:</h2>
 
 Code contained in: 
-Hospitalreadmission.ipynb, 
+Hospitalreadmission.ipynb, hospitalinpatient.twbx
 
 Data cleaning:
 - Replaced "?" with NaN
