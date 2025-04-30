@@ -55,19 +55,19 @@ Advanced Skills:
 **Results**:
 
 Logistic Regression ROC:  <br/>
-<img src="https://i.imgur.com/NpyUnYp.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NpyUnYp.png" height="40%" width="40%" alt="Logistic Regression ROC model"/>
 
 The logistic regression's ROC AUC curve shows the performance of the logistic regression model in distinguishing between patients who were readmitted versus not readmitted. The performance is better than random guessing, as shown by the area under the curve (AUC), which is greater than 0.5.
 
 Random Forest ROC: <br/>
-<img src="https://i.imgur.com/ZOG0KEJ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZOG0KEJ.png" height="40%" width="40%" alt="Random forest ROC model"/>
 
 When compared to logistic regression, the random forest model's ROC AUC curve shows better class separation than the logistic regression model with an AUC of 0.69. Initially, some overfitting was detected, which was addressed through hyperparameter tuning, and the final model achieved consistent AUC scores across training and testing datasets.
 
 Gradient Boosting ROC:  <br/>
-<img src="https://i.imgur.com/5FpO8p0.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5FpO8p0.png" height="40%" width="40%" alt="Gradient Boosting ROC model"/>
 
-Out of all the models tested, Gradient Boosting performed the best. With an average AUC of  0.70
+Out of all the models tested, Gradient Boosting performed the best with an average AUC of  0.70. It showed the strongest ability to rank patients by their risk of readmission.
 
 Feature Importance plot:  <br/>
 <img src="https://i.imgur.com/LBcmk6H.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
